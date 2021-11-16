@@ -23,8 +23,8 @@ from sklearn.model_selection import train_test_split
 from tensorflow import keras
 from tensorflow.python.keras.models import Sequential
 from tensorflow.python.keras.layers import Dense, Flatten, Conv2D, Dropout
-from keras import utils as np_utils
-from keras.utils import to_categorical
+from tensorflow.keras import utils as np_utils
+from tensorflow.keras.utils import to_categorical
 
 img_rows, img_cols = 28, 28
 num_classes = 10

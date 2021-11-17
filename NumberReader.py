@@ -88,9 +88,6 @@ results = model.predict(test_x)
 results = np.argmax(results,axis = 1)
 results = pd.Series(results,name="Label")
 
-# output
+# output with a "submission.csv" file with digit labeling added to the test dataset which previsouly did not have a label
 submission = pd.concat([pd.Series(range(1,28001), name='ImageId'), results], axis=1)
 submission.to_csv("submission.csv", index=False)
-
-
-
